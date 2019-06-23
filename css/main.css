@@ -97,8 +97,9 @@ textarea {
 
 
 html {
-  background-color: #fff;
-  height: 100%;
+  background: url('../img/grey-floral.png') repeat;
+  background: cover;
+  height: 90%;
 }
 
 body {
@@ -106,13 +107,47 @@ body {
   padding: 2em;
   font-size: 1em;
   height: 100%;
+  opacity: 0.8%;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display:flex;
-  justify-content: space-between;
+  justify-content:;
+  flex-flow: row wrap;
+}
+.background {
+  background: cover;  
+}
+
+header,
+footer,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+  
+}
+
+header {
+  color: whitesmoke;
+  font-size: 4em;
+  line-height: 2.5em;
+  background-color:goldenrod;
+  border: 0.13em solid whitesmoke;
+  font-family: 'Milonga', cursive;
+}
+
+main {
+  color: goldenrod;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  background-color: #ececec;
+  border: 0.2em solid whitesmoke;
+  padding: 0 1%;
+  opacity: 0.8%;  
 }
 
 .div-1, .div-2, .div-3 {
@@ -120,15 +155,38 @@ body {
   color: whitesmoke;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: rosybrown;
+  background-color: #999999;
   height: 300px;
   display:flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  border: 0.3em solid olive;
+  border: 0.3em solid whitesmoke;
+  padding: 0 1%;
+  flex-grow: 1;
 }
 
+footer {
+  color: whitesmoke;
+  width: 100%;
+  font-size: 2em;
+  line-height: 1em;
+  font-size: 2em;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  
+  border: 0.3em solid whitesmoke;
+  
+
+}
+ul,li {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  width: 10%;  
+}
 
 
 
